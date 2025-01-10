@@ -12,7 +12,7 @@ const PasswordResetRequest = () => {
     e.preventDefault();
     try {
       // Request OTP for password reset
-      const response = await axios.post('http://localhost:5000/api/auth/request-password-reset-otp', {
+      const response = await axios.post('https://auth-4sva.onrender.com/api/auth/request-password-reset-otp', {
         email,
       });
       setMessage(response.data.message);
