@@ -14,7 +14,7 @@ const Signup = () => {
     e.preventDefault();
     try {
       // Request OTP
-      const response = await axios.post('https://your-backend-url/request-otp', {
+      const response = await axios.post('https://auth-4sva.onrender.com/api/auth/request-otp', {
         username,
         email,
         password,
