@@ -21,7 +21,7 @@ const OTPVerificationSignup = () => {
       const { username, email, password } = signupDetails;
 
       // Verify OTP and register user
-      const response = await axios.post('https://your-backend-url/verify-otp', {
+      const response = await axios.post('https://auth-4sva.onrender.com/api/auth/verify-otp', {
         username,
         email,
         password,
