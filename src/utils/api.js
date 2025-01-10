@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { toast } from 'react-toastify';
 
-axios.defaults.baseURL = 'http://localhost:5000/api'; // Backend base URL
+axios.defaults.baseURL = 'https://auth-4sva.onrender.com/api';
 
 // Handle API requests
 export const requestOTP = async (data) => {
