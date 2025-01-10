@@ -20,7 +20,7 @@ const PasswordResetOTPVerification = () => {
       }
 
       // Verify OTP and reset password
-      const response = await axios.post('http://localhost:5000/api/auth/reset-password', {
+      const response = await axios.post('https://auth-4sva.onrender.com/api/auth/reset-password', {
         email,
         otp,
         newPassword,
